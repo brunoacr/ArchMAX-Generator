@@ -1,0 +1,627 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/wezxe/ontologies/2022/3/buildings"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/wezxe/ontologies/2022/3/buildings">
+    <Prefix name="" IRI="http://www.semanticweb.org/wezxe/ontologies/2022/3/buildings"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Awning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Billboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cafe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chimney"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commercial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConstructionSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CountryHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Door"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Industrial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MiscCommercial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MiscIndustrial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MiscResidential"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Porch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residential"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Statue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Store"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suburban"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TiledRoof"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Truck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VendingMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WallSign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterTreatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Window"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#awning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#billboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#door"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#porch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#statue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#table"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tiledroof"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vendingmachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wallsign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#window"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Cafe"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Statue"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#VendingMachine"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ConstructionSite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Machine"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CountryHouse"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Car"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#TiledRoof"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hotel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WallSign"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MiscCommercial"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Awning"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Table"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MiscIndustrial"/>
+        <ObjectIntersectionOf>
+            <ObjectComplementOf>
+                <ObjectUnionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#has"/>
+                        <Class IRI="#Awning"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#has"/>
+                        <Class IRI="#Table"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectUnionOf>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Truck"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MiscResidential"/>
+        <ObjectIntersectionOf>
+            <ObjectComplementOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#has"/>
+                        <Class IRI="#Awning"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#has"/>
+                        <Class IRI="#Table"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#TiledRoof"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PowerPlant"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Chimney"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Pipe"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Restaurant"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Car"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Truck"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Sign"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Store"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Billboard"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Suburban"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Porch"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WaterTreatment"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Pipe"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Truck"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Awning"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Billboard"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <ObjectComplementOf>
+            <ObjectIntersectionOf>
+                <ObjectUnionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#has"/>
+                        <Class IRI="#Car"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#has"/>
+                        <Class IRI="#Truck"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Machine"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <ObjectComplementOf>
+            <ObjectIntersectionOf>
+                <ObjectComplementOf>
+                    <ObjectUnionOf>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#has"/>
+                            <Class IRI="#Door"/>
+                        </ObjectSomeValuesFrom>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#has"/>
+                            <Class IRI="#Window"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectUnionOf>
+                </ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Awning"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <ObjectComplementOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Car"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Truck"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <ObjectComplementOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Chimney"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Statue"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cafe"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chimney"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commercial"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConstructionSite"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CountryHouse"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Door"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Industrial"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Industrial"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has"/>
+                <Class IRI="#Table"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MiscCommercial"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MiscIndustrial"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MiscResidential"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pipe"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Porch"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerPlant"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residential"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residential"/>
+        <ObjectComplementOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Chimney"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has"/>
+                    <Class IRI="#Pipe"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sign"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Statue"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <Class IRI="#Commercial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suburban"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Table"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TiledRoof"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Truck"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VendingMachine"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WallSign"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterTreatment"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Window"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Awning"/>
+        <Class IRI="#Billboard"/>
+        <Class IRI="#Car"/>
+        <Class IRI="#Chimney"/>
+        <Class IRI="#Door"/>
+        <Class IRI="#Machine"/>
+        <Class IRI="#Pipe"/>
+        <Class IRI="#Porch"/>
+        <Class IRI="#Sign"/>
+        <Class IRI="#Statue"/>
+        <Class IRI="#Table"/>
+        <Class IRI="#TiledRoof"/>
+        <Class IRI="#Truck"/>
+        <Class IRI="#VendingMachine"/>
+        <Class IRI="#WallSign"/>
+        <Class IRI="#Window"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Awning"/>
+        <Class IRI="#Billboard"/>
+        <Class IRI="#Door"/>
+        <Class IRI="#Porch"/>
+        <Class IRI="#Sign"/>
+        <Class IRI="#Statue"/>
+        <Class IRI="#Table"/>
+        <Class IRI="#TiledRoof"/>
+        <Class IRI="#VendingMachine"/>
+        <Class IRI="#WallSign"/>
+        <Class IRI="#Window"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Building"/>
+        <Class IRI="#Feature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Commercial"/>
+        <Class IRI="#Industrial"/>
+        <Class IRI="#Residential"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Awning"/>
+        <NamedIndividual IRI="#awning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Billboard"/>
+        <NamedIndividual IRI="#billboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Door"/>
+        <NamedIndividual IRI="#door"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Porch"/>
+        <NamedIndividual IRI="#porch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sign"/>
+        <NamedIndividual IRI="#sign"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Statue"/>
+        <NamedIndividual IRI="#statue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Table"/>
+        <NamedIndividual IRI="#table"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TiledRoof"/>
+        <NamedIndividual IRI="#tiledroof"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VendingMachine"/>
+        <NamedIndividual IRI="#vendingmachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WallSign"/>
+        <NamedIndividual IRI="#wallsign"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Window"/>
+        <NamedIndividual IRI="#window"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Feature"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

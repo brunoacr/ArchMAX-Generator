@@ -1,0 +1,6 @@
+.idea/
+results/
+blender_project/
+scripts/
+
+__pycache__/
